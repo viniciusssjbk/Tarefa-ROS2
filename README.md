@@ -33,6 +33,11 @@ achar o topico de um tipo especifico --> ros2 topic find <topic_type>
 
 listar os serviços --> ros2 service list
 
+
+1. nós são os programas
+2. topicos é a ligação entre nós onde um nó publica uma mensagem e pode ser enviado para varios outros nós
+3. serviços são ligações de nós onde um nó solicita e o outro nó responde, porem existe o tipo de nó que nem solicita e nem recebe resposta
+
 achar o tipo de serviço --> ros2 service type <service_name> ou ros2 service -t para mostrar junto os tipos dele
 valores: empty = não recebe e nem envia solicitação 
 

@@ -49,10 +49,28 @@ depois editar o .txt
 por fim compilar --> colcon build --packages-select <nome do pacote>
 depois fonte do ambiente --> source install/setup.bash
 
-
 achar o tipo de serviço --> ros2 service type <service_name> ou ros2 service -t para mostrar junto os tipos dele
 valores: empty = não recebe e nem envia solicitação 
 
 mostrar tipo de socilitação(em cima do ---) e da resposta(em baixo ---) --> ros2 interface show <type_name>
 
 fazer uma chamada pelo serviço --> ros2 service call <service_name> <service_type> <arguments>
+
+
+
+conceitos basicos de c++:
+C++
+
+int main () { cout << "Hello World! "; return 0; }
+int main() # função principal onde tudo que estiver dentro vai executar
+
+cout << # imprime oq estiver do lado
+return 0 # finaliza a função
+
+cout << name << " is " << age << " years old and " << height << " feet tall.";
+
+variaveis tem que estar dentro da função e tem int, double, string, char e bool
+
+cin >> #Receber respostas do usuario
+
+variable = (condition) ? expressionTrue : expressionFalse;

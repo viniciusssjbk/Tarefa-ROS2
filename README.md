@@ -38,6 +38,18 @@ listar os serviços --> ros2 service list
 2. topicos é a ligação entre nós onde um nó publica uma mensagem e pode ser enviado para varios outros nós
 3. serviços são ligações de nós onde um nó solicita e o outro nó responde, porem existe o tipo de nó que nem solicita e nem recebe resposta
 
+
+
+para realizar a tarefa:
+
+primeiro criar um pacote --> ros2 pkg create --build-type ament_cmake --license Apache-2.0 <nome do pacote> 
+depois criar um publicador pelo c++
+depois criar um subscribe pelo c++
+depois editar o .txt
+por fim compilar --> colcon build --packages-select <nome do pacote>
+depois fonte do ambiente --> source install/setup.bash
+
+
 achar o tipo de serviço --> ros2 service type <service_name> ou ros2 service -t para mostrar junto os tipos dele
 valores: empty = não recebe e nem envia solicitação 
 
